@@ -25,7 +25,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -36,7 +35,7 @@
 <h3 align="center">Making Devices</h3>
 
   <p align="center">
-    Open Source projects where we struggle with engineering, electronics, coding and who knows what else... In this case, TC Logger Device is a very simple USB thermocouple reader, so hopefully you may find it interesting ;)
+    Open Source projects where we struggle with engineering, electronics, coding and who knows what else... In this case, RHT Device is a very simple humidity and temperature sensor, so hopefully you may find it interesting ;)
   </p>
 </div>
 
@@ -70,9 +69,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Bytes Counter Shot][product-screenshot]](https://makingdevices.com/TCLogger-Device)
+[![Bytes Counter Shot][product-screenshot]](https://github.com/makingdevices/RHT-device)
 
-TC Logger Device is a simple thermocouple USB reader: help you to measure any proccess you need using the USB protocol an a simple software developed in Python. The project was chosen to test the USB communication, explore the interface PC-Embedded system. The project is able to use two thermocouple at the same time and share the data to the computer at a speed of 5Hz. (5 samples per second). The main microprocessor is the PIC18F14K50.
+RHT Device is a very simple relative humidity and temperature sensor that shows the data in the screen. The project was chosen to test the I2C communication of the PIC18F14k50. 
 
 This device is under development, so I do encourage you to not assembly, order any PCB or use any software from this repository until the project is finished.
 
@@ -92,7 +91,7 @@ This device is under development, so I do encourage you to not assembly, order a
 ## Build one
 NOT RECOMMENDED AS THE DEVICE IS UNDER DEVELOPMENT
 
-1. Get the gerber files for the latest version: [V1.2](https://github.com/makingdevices/Thermo-device-logger/tree/main/Gerber/v1.2) 
+1. Get the gerber files for the latest version: [V0.1](https://github.com/makingdevices/RHT-device/tree/main/Gerber/RHT-Device-v0.1.zip) 
 2. Send them to a PCB manufacturer ([Our Sponsor is PCBWAY][sponsor-url])
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -102,8 +101,8 @@ NOT RECOMMENDED AS THE DEVICE IS UNDER DEVELOPMENT
 
 Instructions of use:
 
-- The LED will light up if a thermocouple is not detected.
-- Use the Python software to communicate with the board.
+- When the button is pressed, the temperature is shown.
+- Next time the button is pressed, relative humidity is shown. It will change between temperatura and humidity
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,16 +110,9 @@ Instructions of use:
 ## Roadmap
 
 - [ ] Finish the firmware for the PIC18F14K50
-- [ ] Enable debug mode on PC software
-- [ ] Finish PC software
-    - [ ] Program debug mode
-    - [ ] Implement SCPI commands 
-    - [ ] Add data records 
-    - [ ] Improve thermocouple graphs
-    - [ ] Add Device Info page
 
 
-See the [open issues](https://github.com/makingdevices/Thermo-device-logger/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/makingdevices/RHT-device/issues) for a full list of proposed features (and known issues).
 
 State: Project <b>UNFINISHED</b> - 06/01/2023
 
@@ -142,7 +134,7 @@ Distributed under three licenses:
 
 Making Devices - [@MakingDevices](https://www.instagram.com/makingdevices/)
 
-Project Link: [https://github.com/makingdevices/Thermo-device-logger](https://github.com/makingdevices/Thermo-device-logger/)
+Project Link: [https://github.com/makingdevices/Thermo-device-logger](https://github.com/makingdevices/RHT-device/)
 
 Other Links: [LinkTree](https://makingdevices.com/links/)
 
@@ -162,16 +154,16 @@ PCBWay is the most professional PCB manufacturer for prototyping and low-volume 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/makingdevices/Bytes-Counter.svg?style=for-the-badge
-[contributors-url]: https://github.com/makingdevices/Bytes-Counter/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/makingdevices/Bytes-Counter.svg?style=for-the-badge
-[forks-url]: https://github.com/makingdevices/Bytes-Counter/network/members
-[stars-shield]: https://img.shields.io/github/stars/makingdevices/Bytes-Counter.svg?style=for-the-badge
-[stars-url]: https://github.com/makingdevices/Bytes-Counter/stargazers
-[issues-shield]: https://img.shields.io/github/issues/makingdevices/Bytes-Counter.svg?style=for-the-badge
-[issues-url]: https://github.com/makingdevices/Bytes-Counter/issues
+[contributors-shield]: https://img.shields.io/github/contributors/makingdevices/RHT-device.svg?style=for-the-badge
+[contributors-url]: https://github.com/makingdevices/RHT-device/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/makingdevices/RHT-device.svg?style=for-the-badge
+[forks-url]: https://github.com/makingdevices/RHT-device/network/members
+[stars-shield]: https://img.shields.io/github/stars/makingdevices/RHT-device.svg?style=for-the-badge
+[stars-url]: https://github.com/makingdevices/RHT-device/stargazers
+[issues-shield]: https://img.shields.io/github/issues/makingdevices/RHT-device.svg?style=for-the-badge
+[issues-url]: https://github.com/makingdevices/RHT-device/issues
 [license-shield]: /images/license.png
-[license-url]: https://github.com/makingdevices/Bytes-Counter/tree/main/License
+[license-url]: https://github.com/makingdevices/RHT-device/tree/main/License
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/making-devices/
 [sponsor-shield]: https://img.shields.io/badge/SPONSOR-PCBWAY-black.svg?style=for-the-badge&colorB=1200
