@@ -2,7 +2,7 @@
 MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
 Version=1.0
 [File000]
-Location=C:\Users\rubenelportero\Desktop\Making Devices\Projects\RHT device\v0.1\Simulation\source_TESTED.o
+Location=D:\GitHub\RHT-Device\Firmware\source_TESTED.o
 Folder=Intermediary
 DeviceName=PIC18LF14K50
 LanguageToolSuiteID={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
@@ -15,7 +15,7 @@ ToolArgsString=-Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
 TraceCmdString=
 DebugOptions=
 [File001]
-Location=C:\Users\rubenelportero\Desktop\Making Devices\Projects\RHT device\v0.1\Simulation\RHT-device.cof
+Location=D:\GitHub\RHT-Device\Firmware\RHT-device.cof
 Folder=Output
 DeviceName=PIC18LF14K50
 LanguageToolSuiteID={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
@@ -28,7 +28,7 @@ ToolArgsString=/o"$(BINDIR_)$(TARGETBASE).cof" /M"$(BINDIR_)$(TARGETBASE).map" /
 TraceCmdString=
 DebugOptions=
 [File002]
-Location=C:\Users\rubenelportero\Desktop\Making Devices\Projects\RHT device\v0.1\Simulation\RHT-device.hex
+Location=D:\GitHub\RHT-Device\Firmware\RHT-device.hex
 Folder=Output
 DeviceName=PIC18LF14K50
 LanguageToolSuiteID={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
