@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name BytesCounter-rescue)(type Legacy)(uri "C:/Users/rubenelportero/Desktop/Making Devices/Projects/RHT device/v0.1/Kicad/RHT device/Library.lib")(options "")(descr ""))
+  (version 7)
+  (lib (name "BytesCounter-rescue")(type "Legacy")(uri "C:/Users/rubenelportero/Desktop/Making Devices/Projects/RHT device/v0.1/Kicad/RHT device/Library.lib")(options "")(descr ""))
+  (lib (name "SamacSys_Parts")(type "Legacy")(uri "D:/SamacSys_PCB_Library_2.5/KiCad/SamacSys_Parts.lib")(options "")(descr ""))
 )
