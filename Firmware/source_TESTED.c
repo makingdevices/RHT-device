@@ -57,7 +57,7 @@ int sleep_time = 2000; //Time before deep sleep
 int time_letters = 500; //time for type of measurement message
 int batt_time = 300; //Time for battery message
 int event_timer = 500; //The time we need to mantain pressed the botons to execute reset/sound events.
-int bouncing_timer_var = 10; //The time we need to wait between two button actions
+int bouncing_timer_var = 25; //The time we need to wait between two button actions
 int bouncing_time = 0;
 char state = 0;  // 0 = temperature, 1 = humidity
 char command = 0;
@@ -93,13 +93,9 @@ void _high_isr (void)   //High priority interrupt.
 {
 char i=0; 
 
-if(INTCONbits.TMR0IF && deep_sleep <= sleep_time) //Timer0 interrupt
+if(INTCONbits.TMR0IF) //Timer0 interrupt
 	{
-		if (deep_sleep > sleep_time){ //If the time for sleep has come
-			LATA = 0b00000000; //turn off the display
-			LATB = 0b00000000;
-			OSCCONbits.IDLEN = 0; //Prepare the microchip for deep sleep.
-		}
+
 		//We set the timer0 again
 		TMR0H = 0xFE;
 		TMR0L = 0xC7;
@@ -144,6 +140,7 @@ if(INTCONbits.TMR0IF && deep_sleep <= sleep_time) //Timer0 interrupt
 		}
 	}	
 	INTCONbits.TMR0IF = 0; // reset overflow bit (for timer0).
+
  bouncing_time++;
  if(INTCONbits.RABIF) //if we are pressing a button...
       { 
@@ -160,7 +157,7 @@ if(INTCONbits.TMR0IF && deep_sleep <= sleep_time) //Timer0 interrupt
       }
 
 	deep_sleep++;  //We increase time before sleep
-	if (deep_sleep > sleep_time){ //If the time for sleep has come
+	if (deep_sleep >= sleep_time){ //If the time for sleep has come
 		LATA = 0; //turn off the display
 		LATB = 0;
 		LATC = 0;
@@ -289,7 +286,6 @@ void main(void)
 {
 	ANSELHbits.ANS10 = 0;	  // Desactivate ANALOG pins
 
-	Delay10TCYx(120);
 	if(init == 0){
 		InitOSC();     //Internal OSC 16MHz 
 		Delay10TCYx(1000);
@@ -309,12 +305,13 @@ void main(void)
 	Delay10TCYx(200);
 	batterylevel();
 	floattodisplay(state+1);
-	Sleep(); //Sleep either idle or deep mode!  
+	Sleep(); //Sleep either idle or deep mode!
+	//Delay10TCYx(120);  
 }
 
  void InitOSC(void) 
  {    
-      OSCCON  = 0b10010110;   //Internal 250KHz    
+      OSCCON  = 0b10010110;   //Internal 250KHz    31KHz?? OSCCON  = 0b10010110;
  } 
 
  void Interrupts_enable(void) 
