@@ -73,8 +73,6 @@
 
 RHT Device is a very simple relative humidity and temperature sensor that shows the data in the screen. The project was chosen to test the I2C communication of the PIC18F14k50. 
 
-This device is under development, so I do encourage you to not assembly, order any PCB or use any software from this repository until the project is finished.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
@@ -89,9 +87,9 @@ This device is under development, so I do encourage you to not assembly, order a
 <!-- GETTING STARTED -->
 
 ## Build one
-NOT RECOMMENDED AS THE DEVICE IS UNDER DEVELOPMENT
+Documentation is being updated.
 
-1. Get the gerber files for the latest version: [V0.1](https://github.com/makingdevices/RHT-device/tree/main/Gerber/RHT-Device-v0.1.zip) 
+1. Get the gerber files for the latest version: [V1.0](https://github.com/makingdevices/RHT-device/tree/main/Gerber/Gerber_v1.0.zip) 
 2. Send them to a PCB manufacturer ([Our Sponsor is PCBWAY][sponsor-url])
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -102,19 +100,21 @@ NOT RECOMMENDED AS THE DEVICE IS UNDER DEVELOPMENT
 Instructions of use:
 
 - When the button is pressed, the temperature is shown.
-- Next time the button is pressed, relative humidity is shown. It will change between temperatura and humidity
+- Next time the button is pressed, relative humidity is shown. It will change between temperature and humidity
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Finish the firmware for the PIC18F14K50
+- [x] Finish the firmware for the PIC18F14K50
+- [x] Validate the RHT-Device board V1.0
+- [ ] Update all the documentation
 
 
 See the [open issues](https://github.com/makingdevices/RHT-device/issues) for a full list of proposed features (and known issues).
 
-State: Project <b>UNFINISHED</b> - 06/01/2023
+State: Project <b>FINISHED</b> - 11/05/2023
 
 Priority: <b>Medium</b>
 
