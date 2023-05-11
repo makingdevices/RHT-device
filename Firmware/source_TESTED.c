@@ -57,6 +57,8 @@ int sleep_time = 2000; //Time before deep sleep
 int time_letters = 500; //time for type of measurement message
 int batt_time = 300; //Time for battery message
 int event_timer = 500; //The time we need to mantain pressed the botons to execute reset/sound events.
+int bouncing_timer_var = 10; //The time we need to wait between two button actions
+int bouncing_time = 0;
 char state = 0;  // 0 = temperature, 1 = humidity
 char command = 0;
 char battery = 0;
@@ -142,11 +144,13 @@ if(INTCONbits.TMR0IF && deep_sleep <= sleep_time) //Timer0 interrupt
 		}
 	}	
 	INTCONbits.TMR0IF = 0; // reset overflow bit (for timer0).
+ bouncing_time++;
  if(INTCONbits.RABIF) //if we are pressing a button...
       { 
 		OSCCONbits.IDLEN = 1; //Set idle mode. 
 
-		if(PORTAbits.RA0 == 0 && deep_sleep <= sleep_time){ //
+		if(PORTAbits.RA0 == 0 && deep_sleep <= sleep_time && bouncing_time >= bouncing_timer_var){ //
+			bouncing_time = 0;
 			if(state==0)state = 1;
 			else state = 0;
 		}	
