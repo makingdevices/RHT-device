@@ -91,6 +91,10 @@ Documentation is being updated.
 
 1. Get the gerber files for the latest version: [V1.0](https://github.com/makingdevices/RHT-device/tree/main/Gerber/Gerber_v1.0.zip) 
 2. Send them to a PCB manufacturer ([Our Sponsor is PCBWAY][sponsor-url])
+3. You should solder all the components in the board. ([The schematic is available here v1.0][schematic-url])
+4. Program the firmware into the pic. ([V1.0 is here][firmware-url])
+
+Enjoy :)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,6 +105,8 @@ Instructions of use:
 
 - When the button is pressed, the temperature is shown.
 - Next time the button is pressed, relative humidity is shown. It will change between temperature and humidity
+- After 10s of no use, the screen will be off and the device enters sleep mode.
+- One button click will wake up the device for another 10s
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,8 +122,6 @@ See the [open issues](https://github.com/makingdevices/RHT-device/issues) for a 
 
 State: Project <b>FINISHED</b> - 11/05/2023
 
-Priority: <b>Medium</b>
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Power Consumption -->
@@ -125,11 +129,11 @@ Priority: <b>Medium</b>
 
 One of the main requisites for the board is to obtain a minimum power consumption so the device can live from a coin cell. When the screen is on we obtain:
 
-[![ON Screen consumption Shot][pconscreen-screenshot]](https://github.com/makingdevices/RHT-device/)
+[![ON Screen consumption Shot][pconscreen-screenshot]](https://github.com/makingdevices/RHT-device/tree/main/Validation/)
 
 In sleep mode, the power consumption is as follows:
 
-[![OFF Screen consumption Shot][pcoffscreen-screenshot]](https://github.com/makingdevices/RHT-device/)
+[![OFF Screen consumption Shot][pcoffscreen-screenshot]](https://github.com/makingdevices/RHT-device/tree/main/Validation/)
 
 With this data and a normal use of 5 reading a day, the battery should last for several years.
 
@@ -178,8 +182,8 @@ Other Links: [LinkTree](https://makingdevices.com/links/)
 [sponsor-url]: https://www.pcbway.com/?from=makingdevices
 [sponsor-screenshot]: /images/PCB_sponsor.png
 [product-screenshot]: images/screenshot.jpg
-[pconscreen-screenshot]: images/screenshot.jpg
-[pcoffscreen-screenshot]: images/screenshot.jpg
+[pconscreen-screenshot]: /Validation/4_Power_Consumption/Screen_ON.png
+[pcoffscreen-screenshot]: /Validation/4_Power_Consumption/Screen_OFF.png
 [PIC]: https://img.shields.io/badge/PIC18LF14K50-000000?style=for-the-badge
 [PIC-url]: http://ww1.microchip.com/downloads/en/devicedoc/40001350f.pdf
 [kicad-shield]: https://img.shields.io/badge/kicad-0b03fc?style=for-the-badge&logo=kicad&logoColor=white
@@ -198,3 +202,5 @@ Other Links: [LinkTree](https://makingdevices.com/links/)
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[schematic-url]: /Output_PDF/Schematic_v1.0.pdf
+[firmware-url]: /Firmware/RHT-device.hex
