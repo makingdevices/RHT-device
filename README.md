@@ -131,10 +131,13 @@ One of the main requisites for the board is to obtain a minimum power consumptio
 
 [![ON Screen consumption Shot][pconscreen-screenshot]](https://github.com/makingdevices/RHT-device/tree/main/Validation/)
 
+<b>Average Current</b> = 10.69mA
+
 In sleep mode, the power consumption is as follows:
 
 [![OFF Screen consumption Shot][pcoffscreen-screenshot]](https://github.com/makingdevices/RHT-device/tree/main/Validation/)
 
+<b>Average Current</b> = 6.79uA
 With this data and a normal use of 5 reading a day, the battery should last for several years.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
