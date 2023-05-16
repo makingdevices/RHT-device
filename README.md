@@ -181,7 +181,7 @@ Other Links: [LinkTree](https://makingdevices.com/links/)
 [sponsor-shield]: https://img.shields.io/badge/SPONSOR-PCBWAY-black.svg?style=for-the-badge&colorB=1200
 [sponsor-url]: https://www.pcbway.com/?from=makingdevices
 [sponsor-screenshot]: /images/PCB_sponsor.png
-[product-screenshot]: images/screenshot.jpg
+[product-screenshot]: images/screenshotV1.0.gif
 [pconscreen-screenshot]: /Validation/4_Power_Consumption/Screen_ON.png
 [pcoffscreen-screenshot]: /Validation/4_Power_Consumption/Screen_OFF.png
 [PIC]: https://img.shields.io/badge/PIC18LF14K50-000000?style=for-the-badge
