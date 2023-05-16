@@ -120,6 +120,22 @@ Priority: <b>Medium</b>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Power Consumption -->
+## Power Consumption
+
+One of the main requisites for the board is to obtain a minimum power consumption so the device can live from a coin cell. When the screen is on we obtain:
+
+[![ON Screen consumption Shot][pconscreen-screenshot]](https://github.com/makingdevices/RHT-device/)
+
+In sleep mode, the power consumption is as follows:
+
+[![OFF Screen consumption Shot][pcoffscreen-screenshot]](https://github.com/makingdevices/RHT-device/)
+
+With this data and a normal use of 5 reading a day, the battery should last for several years.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 <!-- LICENSE -->
 ## License
 
@@ -162,6 +178,8 @@ Other Links: [LinkTree](https://makingdevices.com/links/)
 [sponsor-url]: https://www.pcbway.com/?from=makingdevices
 [sponsor-screenshot]: /images/PCB_sponsor.png
 [product-screenshot]: images/screenshot.jpg
+[pconscreen-screenshot]: images/screenshot.jpg
+[pcoffscreen-screenshot]: images/screenshot.jpg
 [PIC]: https://img.shields.io/badge/PIC18LF14K50-000000?style=for-the-badge
 [PIC-url]: http://ww1.microchip.com/downloads/en/devicedoc/40001350f.pdf
 [kicad-shield]: https://img.shields.io/badge/kicad-0b03fc?style=for-the-badge&logo=kicad&logoColor=white
