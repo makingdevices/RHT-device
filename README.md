@@ -109,7 +109,7 @@ Instructions of use:
 
 - [x] Finish the firmware for the PIC18F14K50
 - [x] Validate the RHT-Device board V1.0
-- [ ] Update all the documentation
+- [x] Update all the documentation
 
 
 See the [open issues](https://github.com/makingdevices/RHT-device/issues) for a full list of proposed features (and known issues).
