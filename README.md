@@ -167,6 +167,17 @@ Other Links: [LinkTree](https://makingdevices.com/links/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Sponsor -->
+## Sponsor
+
+[PCBWAY](https://www.pcbway.com/?from=makingdevices) is the most professional PCB manufacturer for prototyping and low-volume production to work with in the world. With more than a decade in the field, They are committed to meeting the needs of their customers from different industries in terms of quality, delivery, cost-effectiveness and any other demanding requests. As Sponsor of Making Devices, they will be in charge of all the PCBs for MDV, allowing both of us to grow together in a long term partnership. We hope you take them into account for your both personal and professional prototypes or products.
+
+[![Sponsor Shot][sponsor-screenshot-pcb1]][sponsor-url]
+[![Sponsor Shot][sponsor-screenshot-pcb2]][sponsor-url]
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -184,7 +195,8 @@ Other Links: [LinkTree](https://makingdevices.com/links/)
 [linkedin-url]: https://www.linkedin.com/company/making-devices/
 [sponsor-shield]: https://img.shields.io/badge/SPONSOR-PCBWAY-black.svg?style=for-the-badge&colorB=1200
 [sponsor-url]: https://www.pcbway.com/?from=makingdevices
-[sponsor-screenshot]: /images/PCB_sponsor.png
+[sponsor-screenshot-pcb1]: /images/rht_pcb1.jpg
+[sponsor-screenshot-pcb2]: /images/rht_pcb2.jpg
 [product-screenshot]: images/screenshotV1.0.gif
 [pconscreen-screenshot]: /Validation/4_Power_Consumption/Screen_ON.png
 [pcoffscreen-screenshot]: /Validation/4_Power_Consumption/Screen_OFF.png
